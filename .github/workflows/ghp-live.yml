@@ -54,8 +54,8 @@ jobs:
               dresolve) ghp decisions "$N" --resolve D1 --validated --by PO ;;
               push-preview) ghp push "$N" --plan-out .ghp/plan-push.md ;;
               push-apply) ghp push "$N" --apply --expect-plan .ghp/plan-push.md ;;
-              pr-preview) ghp pr create "$N" --title "L-052 fictional change for #$N" --body-file pr-body.md --base main --push --plan-out .ghp/plan-pr.md ;;
-              pr-apply) ghp pr create "$N" --title "L-052 fictional change for #$N" --body-file pr-body.md --base main --push --apply --expect-plan .ghp/plan-pr.md ;;
+              pr-preview) ghp pr create "$N" --title "L-052 fictional change for #$N" --body-file pr-body.md --base main --plan-out .ghp/plan-pr.md ;;
+              pr-apply) ghp pr create "$N" --title "L-052 fictional change for #$N" --body-file pr-body.md --base main --apply --expect-plan .ghp/plan-pr.md ;;
               activate) ghp activate "$N" --apply ;;
               done-preview) ghp done "$N" --plan-out .ghp/plan-done.md ;;
               done-apply) ghp done "$N" --apply --expect-plan .ghp/plan-done.md ;;
