@@ -10,7 +10,7 @@ on:
         description: space-separated step names
         required: true
       arg:
-        description: optional comment text for bot-approve (ASCII letters, digits, space, and / : > [ ] -)
+        description: "optional comment text for bot-approve (letters, digits, space, slash, colon, angle, brackets, dash)"
         required: false
         default: ""
 permissions:
