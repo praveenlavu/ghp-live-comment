@@ -34,6 +34,7 @@ Tests are free-form IDs: `Class.method`, `path::test_name` or `describe > it`.
 |---|---|---|---|---|
 | AC-1 | pick one window | tests/test_pick.py::test_pick | fictional | green |
 | AC-2 | default first | tests/test_pick.py::test_default | fictional | green |
+| AC-2 | default first, second test | tests/test_pick.py::test_default_again | fictional | green |
 
 ## 4. Gate & review log  (appended by speckit.ghp.gate and speckit.ghp.review)
 ### Review
