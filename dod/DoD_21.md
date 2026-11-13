@@ -46,3 +46,4 @@ Fictional review: AC-1 and AC-2 covered by fictional tests; no blocking finding.
 - [x] no assertion-free tests
 - [x] all assumptions / questions / edge cases resolved
 - [x] gates green
+- [x] fictional extra check ticked after the approval
