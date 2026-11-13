@@ -22,7 +22,7 @@ Fictional story E, done progression and L-045..L-048 for live round 2 batch C-R2
 - **Approach / chosen option + why:** a fictional dropdown of pickup windows; simplest option.
 - **Assumptions:** _(fill in)_ Each is also recorded in Decisions_9.md (`ghp decisions 9 --add`).
 - **Open questions → answers:** _(fill in as they arise)_
-- [ ] Q1: Which fictional pickup window is the default? → _(open)_ · owner: PO
+- [x] Q1: Which fictional pickup window is the default? → 09:00 is the fictional default (PO comment 6858661722) · owner: PO
   Format, one line each: `- [ ] Q1: <question> → _(open)_ · owner: PO`; answered: `- [x] Q1: <question> → <answer> · owner: PO`
 - **Use cases & edge cases:** _(fill in — each: covered-by test / N/A + why)_
 
@@ -32,7 +32,8 @@ Tests are free-form IDs: `Class.method`, `path::test_name` or `describe > it`.
 
 | AC | acceptance criterion | tests | commit/PR | status |
 |---|---|---|---|---|
-| AC-1 | _(what it must do)_ | _(test IDs, …)_ | _(commit / PR)_ | _(red→green)_ |
+| AC-1 | pick one window | tests/test_pick.py::test_pick | fictional | green |
+| AC-2 | default first | tests/test_pick.py::test_default | fictional | green |
 
 ## 4. Gate & review log  (appended by speckit.ghp.gate and speckit.ghp.review)
 ### Review
@@ -40,8 +41,8 @@ Fictional review: AC-1 and AC-2 covered by fictional tests; no blocking finding.
 
 
 ## 5. Definition of Done  (all ✅ to close)
-- [ ] every AC mapped to a passing real test
-- [ ] coverage meets the project's bar
-- [ ] no assertion-free tests
-- [ ] all assumptions / questions / edge cases resolved
-- [ ] gates green
+- [x] every AC mapped to a passing real test
+- [x] coverage meets the project's bar
+- [x] no assertion-free tests
+- [x] all assumptions / questions / edge cases resolved
+- [x] gates green
